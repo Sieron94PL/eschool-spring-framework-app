@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC 
+		"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+		"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="base-definition" template="/WEB-INF/views/layout.jsp">
+		<put-attribute name="title" value="Eschool" />
+		<put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+	</definition>
+
+	<definition name="403" extends="base-definition">
+		<put-attribute name="title" value="Subjects" />
+		<put-attribute name="body" value="/WEB-INF/views/403.jsp" />
+	</definition>
+
+	<definition name="subjects" extends="base-definition">
+		<put-attribute name="title" value="Subjects" />
+		<put-attribute name="body" value="/WEB-INF/views/subjects.jsp" />
+	</definition>
+
+	<definition name="home" extends="base-definition">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body" value="/WEB-INF/views/home.jsp" />
+	</definition>
+
+	<definition name="clazzes" extends="base-definition">
+		<put-attribute name="title" value="Classes" />
+		<put-attribute name="body" value="/WEB-INF/views/clazzes.jsp" />
+	</definition>
+
+	<definition name="login" extends="base-definition">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body" value="/WEB-INF/views/login.jsp" />
+	</definition>
+
+	<definition name="teacherMarks" extends="base-definition">
+		<put-attribute name="title" value="Marks" />
+		<put-attribute name="body" value="/WEB-INF/views/teacherMarks.jsp" />
+	</definition>
+
+	<definition name="profile" extends="base-definition">
+		<put-attribute name="title" value="Profile" />
+		<put-attribute name="body" value="/WEB-INF/views/profile.jsp" />
+	</definition>
+
+	<definition name="registration" extends="base-definition">
+		<put-attribute name="title" value="Registration" />
+		<put-attribute name="body" value="/WEB-INF/views/registration.jsp" />
+	</definition>
+
+	<definition name="users" extends="base-definition">
+		<put-attribute name="title" value="Users" />
+		<put-attribute name="body" value="/WEB-INF/views/users.jsp" />
+	</definition>
+
+	<definition name="studentMarks" extends="base-definition">
+		<put-attribute name="title" value="Student" />
+		<put-attribute name="body" value="/WEB-INF/views/studentMarks.jsp" />
+	</definition>
+
+</tiles-definitions>
